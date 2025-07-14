@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+   
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="logo">SHRAVYA</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="# skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Content Section -->
+    <section class="content-section">
+      <div class="text-content">
+        <h1 class="intro-text">
+          Hello, I'm a <span>Full Stack Developer</span>
+        </h1>
+        <p>
+          A full-stack developer is a programmer who works within software development and is knowledgeable in both the front end and back end of an application. They work to create a seamless user experience through their diverse skill set. 
+
+        <!-- Social Icons -->
+        <div class="icons">
+          <a href="https://www.instagram.com/shravya4430/?hl=en" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://web.whatsapp.com/" target="_blank" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nandigam-shravya-12645124b/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <a href="#about" class="about-button">About Me</a>
+
+      </div>
+
+      <!-- Image Section -->
+      <div class="image-container">
+        <img src="shravya.jpeg" alt="Profile Picture" class="profile-img">
+
+      </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container">
+          
+          <!-- Image -->
+          <div class="about-image">
+            <img src="shravya.jpeg" alt="Shravya" />
+          </div>
+          
+          <!-- Text -->
+          <div class="about-text">
+            <a href="#about" class="about-button">About Me</a>
+          
+            <p>
+              I'm Shravya, a passionate Full Stack Developer with experience in building dynamic, responsive web applications. I specialize in HTML, CSS, JavaScript, and backend technologies like Node.js. I love learning and solving real-world problems with code.
+            </p>
+          </div>
+      
+        </div>
+      </section>
+      
+
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+      
+        <div class="skills-container">
+          <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+          </div>
+      
+          <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS</h3>
+          </div>
+      
+          <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+          </div>
+      
+          <div class="skill-card">
+            <i class="fa-brands fa-react"></i>
+            <h3>React</h3>
+          </div>
+      
+          <div class="skill-card">
+            <i class="fa-solid fa-code"></i> <!-- For Java or general coding -->
+
+            <h3>JAVA</h3>
+          </div>
+      
+          <div class="skill-card">
+            <i class="devicon-mysql-plain colored"></i>
+            <h3>MySQL</h3>
+          </div>
+          
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <h2>Experience</h2>
+      
+        <div class="experience-card">
+          <h3>Full Stack Development Intern</h3>
+          <p class="company">Arete IT Services Private Limited</p>
+          <p class="duration">Jan 2025 – Mar 2025</p>
+          <ul class="responsibilities">
+            <li>Developed responsive web pages using HTML, CSS, and JavaScript.</li>
+            <li>Worked on backend APIs using Node.js and Express.</li>
+            <li>Collaborated in a team environment using Git and GitHub.</li>
+            <li>Integrated MongoDB for dynamic data handling.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="newsletter-section">
+        <h2>Start Your Full Stack Developer Journey: Subscribe to Our Student Newsletter</h2>
+        <p class="subtext">Get hands-on coding tips, project ideas, and career guidance delivered straight to your inbox. Perfect for aspiring full stack developers!</p>
+      
+        <form class="newsletter-form">
+          <div class="row">
+            <input type="text" placeholder="First name*" required />
+            <input type="text" placeholder="Last name*" required />
+          </div>
+          <div class="row">
+            <input type="email" placeholder="Email*" required />
+            <input type="text" placeholder="Phone number" />
+            <input type="text" placeholder="College name / Postal code*" required />
+          </div>
+          <button type="submit" class="signup-btn">SIGN UP</button>
+        </form>
+      
+        <div class="footer-info">
+          <p>CodeLearn Academy, Online Bootcamp for Students<br>contact@codelearn.dev</p>
+          <p>We respect your privacy and never spam.</p>
+        </div>
+      </section>
+      <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
+      
+        menuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+      </script>
+      
+      <script>
+        // Simple JS validation and confirmation
+        document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+          document.getElementById("success-message").style.display = "block";
+          this.reset();
+        });
+      </script>      
+  </body>
+</html>
