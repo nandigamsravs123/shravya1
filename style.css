@@ -454,15 +454,6 @@ margin:0;
   }
   
   /* Responsive */
-  @media (max-width: 600px) {
-    .newsletter-form .row {
-      flex-direction: column;
-    }
-  
-    .newsletter-form input {
-      width: 100%;
-    }
-  }
   
   
 
@@ -498,121 +489,165 @@ margin:0;
       }
     }
   
-/* Responsive */
+/* ======== Extra Large Devices (Desktops, TVs) ======== */
+/* Tablets and smaller */
+/* For tablets and below (768px and smaller) */
 @media (max-width: 768px) {
-    .content-section {
-      flex-direction: column;
-      text-align: center;
-      padding: 40px 20px;
-      height: auto;
-    }
-  
-    .image-container {
-      margin-top: 30px;
-    }
+  .main-header {
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
   }
-  
 
-  @media (max-width: 768px) {
-    .nav-links {
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background-color: #1e293b;
-      flex-direction: column;
-      gap: 15px;
-      padding: 20px;
-      display: none;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    }
-  
-    .nav-links.show {
-      display: flex;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
+  .logo {
+    padding-left: 0;
+    margin-bottom: 10px;
   }
-  @media (max-width: 768px) {
-    .skills-section h2 {
-      font-size: 26px;
-    }
-  
-    .skills-subtext {
-      font-size: 14px;
-    }
-  
-    .skill-card {
-      font-size: 16px;
-      padding: 15px;
-    }
-  
-    .skill-card i {
-      font-size: 20px;
-    }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0;
   }
-  @media (max-width: 768px) {
-    .experience-card {
-      padding: 20px;
-    }
-  
-    .experience-card h3 {
-      font-size: 20px;
-    }
-  
-    .experience-section h2 {
-      font-size: 28px;
-    }
+
+  .content-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;
   }
-  
-  /* Mobiles (≤ 480px) */
-  @media (max-width: 480px) {
-    .experience-section {
-      padding: 40px 15px;
-    }
-  
-    .experience-card {
-      padding: 15px;
-    }
-  
-    .experience-card h3 {
-      font-size: 18px;
-    }
-  
-    .experience-details li {
-      font-size: 14px;
-    }
+
+  .intro-text {
+    font-size: 32px;
+    margin-top: 40px;
   }
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-image img {
-      width: 200px;
-    }
-  
-    .about-text {
-      padding: 0 10px;
-    }
+
+  .icons {
+    justify-content: center;
   }
-  @media (max-width: 768px) {
-    .main-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .content-section {
-      flex-direction: column;
-      align-items: center;
-    }
+
+  .img-container,
+  .image-container {
+    justify-content: center;
   }
-  
+
+  .profile-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .about-text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .skills {
+    padding: 40px 20px;
+  }
+
+  .skill-card {
+    width: 120px;
+  }
+
+  .experience {
+    padding: 40px 20px;
+  }
+
+  .newsletter-section {
+    padding: 40px 20px;
+  }
+
+  .newsletter-form .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form input {
+    width: 90%;
+  }
+
+  .signup-btn {
+    width: 90%;
+  }
+}
+
+/* For mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .intro-text {
+    font-size: 24px;
+  }
+
+  .skill-card {
+    width: 100px;
+    padding: 15px;
+  }
+
+  .skill-card i {
+    font-size: 30px;
+  }
+
+  .newsletter-section h2 {
+    font-size: 22px;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .signup-btn {
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .experience {
+    padding: 40px 20px;
+  }
+
+  .experience-card {
+    padding: 20px;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .experience-card h3 {
+    font-size: 20px;
+  }
+
+  .experience-card .company,
+  .experience-card .duration {
+    font-size: 14px;
+  }
+
+  .responsibilities {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience h2 {
+    font-size: 24px;
+  }
+
+  .experience-card {
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .experience-card h3 {
+    font-size: 18px;
+  }
+
+  .experience-card .company,
+  .experience-card .duration,
+  .responsibilities {
+    font-size: 13px;
+  }
+}
