@@ -1,0 +1,53 @@
+# 🎨 Personal Portfolio Website (HTML + CSS Only)
+
+This is a simple and responsive personal portfolio built using only **HTML** and **CSS**. It showcases your bio, skills, projects, and contact information.
+
+## 🌟 Features
+- Responsive layout for mobile, tablet, and desktop
+- Sections include: Home, About, Skills, Work, Contact
+- Clean and modern UI design
+- Smooth scrolling and hover effects
+
+## 🛠️ Built With
+- HTML5
+- CSS3
+
+## 📁 Folder Structure
+```
+├── index.html
+├── style.css
+├── images/
+└── README.md
+```
+
+## 🚀 How to Run Locally
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/portfolio-html-css.git
+   cd portfolio-html-css
+   ```
+2. Open `index.html` in any browser.
+
+## 🌐 Live Demo
+[Live Portfolio](https://your-username.github.io/portfolio-html-css)
+
+## 📬 Contact
+- Email: your.email@example.com
+- LinkedIn: [YourLinkedIn](https://www.linkedin.com/in/yourname/)
+
+---
+Made with ❤️ using pure HTML and CSS by [n.shravya]
+
+### 1. HTML5
+**HyperText Markup Language (HTML)** is the standard language for creating web pages. In this project:
+- It provides the structure and content of the portfolio.
+- Elements like `<header>`, `<section>`, `<nav>`, `<footer>`, and semantic tags are used to define the layout.
+- It includes anchor tags (`<a>`) for navigation and `<img>` for images.
+
+### 2. CSS3
+**Cascading Style Sheets (CSS)** handles the presentation and design. In this project:
+- It styles the layout, colors, fonts, spacing, and responsiveness.
+- Media queries are used to make the design responsive for different screen sizes.
+- Flexbox or CSS Grid is used to align and space elements.
+- Pseudo-classes like `:hover` are used for interactive effects.
+- Transitions and animations are applied to enhance user experience.
